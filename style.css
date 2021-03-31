@@ -1,0 +1,138 @@
+.theme-light{
+    --primary:#fff;
+    --secondary : whitesmoke;
+    --accent: #54c75b;
+    --font-color:#000;
+    --pure : #fff;
+}
+
+.theme-dark{
+    --primary:#121212;
+    --secondary : #0b0b0b;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure : #fff;
+}
+
+.theme-ocean{
+    --primary:#252c35;
+    --secondary : #20272e;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure : #fff;
+}
+
+.theme-sepia{
+    --primary:#fbf1c7;
+    --secondary : #eadfb5;
+    --accent: #704214;
+    --font-color: #704214;
+    --pure : #fff;
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background .5s ease-in-out;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--primary);
+    color: var(--font-color);
+}
+
+.container{
+    width: 1192px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.branding{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+nav ul li select {
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    padding: 2px 10px 2px 10px;
+    outline: none;
+    color: var(--font-color);
+    border:none;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+
+header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+
+header .hero-img img{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    right: -20px;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+header p {
+    width: 70%;
+    margin-top: 1rem;
+}
+
+header button{
+    background-color: var(--accent);
+    color: var(--secondary);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+section.main{
+    background-color: var(--secondary);
+    padding: 2rem;
+    height: 700px;
+}
